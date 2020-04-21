@@ -1,5 +1,6 @@
 import React from 'react';
 import SongDetail from './SongDetail'
+import './SongList.css'
 
 const SongList = (props) => {
     const options = props.songs.map((song,index)=> {
@@ -7,7 +8,7 @@ const SongList = (props) => {
     })
 
     return(
-       <table>
+       <table class="highlist">
         <th>Position</th>
         <th>Artist</th>
         <th>Song Title</th>
